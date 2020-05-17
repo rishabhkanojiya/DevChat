@@ -25,7 +25,9 @@ DevChat uses a number of open source projects to work properly:
 - [node.js](https://nodejs.org/en/) - evented I/O for the backend
 - [Express](https://expressjs.com/) - fast node.js network app framework
 - [ReactJS](https://reactjs.org/) - HTML enhanced for web apps!
+- [SASS](https://sass-lang.com/) - Sass is a style sheet language
 - [MongoDB](https://www.mongodb.com/) - MongoDB is a cross-platform document-oriented database program.
+
 
 ## Installation
 
