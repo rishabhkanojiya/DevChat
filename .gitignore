@@ -2,6 +2,7 @@
 .env
 src/config/dev.js
 node_modules
+build
 # dependencies
 /.pnp
 .pnp.js
