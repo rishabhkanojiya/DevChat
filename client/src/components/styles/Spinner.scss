@@ -1,0 +1,17 @@
+.spinner {
+  background-color: #f3f3f3;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #571b58;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  animation: spinnerKey 1s linear infinite;
+}
+@keyframes spinnerKey {
+  0% {
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

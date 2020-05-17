@@ -1,0 +1,84 @@
+.MessageNav {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  &__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    align-self: stretch;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #16639e;
+    }
+  }
+  &__item {
+    align-self: stretch;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: #16639e;
+      border-radius: 1rem;
+    }
+  }
+  &__end {
+    margin-bottom: 2rem;
+  }
+}
+
+.dropdown {
+  padding: 1rem 1rem;
+
+  &__header {
+    font-size: 1.3rem;
+    transition: all 0.4s ease;
+    text-transform: capitalize;
+    // position: relative;
+  }
+
+  &__content {
+    // position: absolute;
+    display: flex;
+
+    flex-direction: column;
+    overflow: hidden;
+
+    &--item {
+      font-size: 1.1rem;
+      padding: 0.2rem 0;
+      visibility: hidden;
+      height: 0;
+      opacity: 0;
+      transform: translateY(-3rem);
+      text-decoration: none;
+      color: white;
+      transition: all 0.5s ease;
+      &:hover {
+        color: rgb(197, 197, 197);
+      }
+    }
+  }
+
+  &:hover {
+    transition: all 0.5s ease;
+    .dropdown__content--item {
+      transform: translateY(0);
+      height: 100%;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
