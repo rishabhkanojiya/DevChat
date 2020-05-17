@@ -52,7 +52,6 @@ const MainNav = ({ history }) => {
       <div class="dropdown">
         <span className="dropdown__header">{user.payload.name}</span>
         <div class="dropdown__content">
-          <a className="dropdown__content--item">Setting</a>
           <a href="/api/logout" className="dropdown__content--item">
             Sign Out
           </a>

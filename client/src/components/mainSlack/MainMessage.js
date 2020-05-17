@@ -53,6 +53,7 @@ const MainMessage = ({ history }) => {
       setFirstLoad(false);
     }
   }, [firstLoad]);
+
   // useEffect(() => {
   //   console.log(currentChannel);
   //   if (Object.keys(currentChannel).length) {
@@ -90,11 +91,10 @@ const MainMessage = ({ history }) => {
       );
     });
   };
-
   if (currChannelLoading) {
     return <Spinner />;
-  } else if (currentChannel.length) {
-    history.push("/channel");
+  } else if (!channels.length) {
+    // history.push("/channel");
     return (
       <div
         style={{
